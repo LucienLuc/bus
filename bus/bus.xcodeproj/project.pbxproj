@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -31,6 +31,7 @@
 		BF8C591625E0A57D0045E7CA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BF8C591825E0A57D0045E7CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFB6580F25E0D333002EB184 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		BFB6581925E0DDCB002EB184 /* bus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = bus.entitlements; sourceTree = "<group>"; };
 		E118A918E444480666A611F1 /* Pods-bus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bus.debug.xcconfig"; path = "Target Support Files/Pods-bus/Pods-bus.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,6 +87,7 @@
 		BF8C590E25E0A57B0045E7CA /* bus */ = {
 			isa = PBXGroup;
 			children = (
+				BFB6581925E0DDCB002EB184 /* bus.entitlements */,
 				BF0E983D25E0B172009AC422 /* Views */,
 				BF8C590F25E0A57B0045E7CA /* busApp.swift */,
 				3402252125E0C1B500B2A71C /* ContentView.swift */,
@@ -110,7 +112,6 @@
 				E118A918E444480666A611F1 /* Pods-bus.debug.xcconfig */,
 				11EA3A5BDFAC5BE5A81D374F /* Pods-bus.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -361,8 +362,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = bus/bus.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"bus/Preview Content\"";
+				DEVELOPMENT_TEAM = HSVU33FWW8;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = bus/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -383,8 +386,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = bus/bus.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"bus/Preview Content\"";
+				DEVELOPMENT_TEAM = HSVU33FWW8;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = bus/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
