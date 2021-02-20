@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		3402252225E0C1B500B2A71C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3402252125E0C1B500B2A71C /* ContentView.swift */; };
 		3402255225E0C85800B2A71C /* Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3402255125E0C85800B2A71C /* Input.swift */; };
-		3402256425E0E3CF00B2A71C /* GoogleMapsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3402256325E0E3CF00B2A71C /* GoogleMapsView.swift */; };
-		3402256725E0E6A200B2A71C /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3402256625E0E6A200B2A71C /* LocationManager.swift */; };
 		A186E2053319C004DAF9AB06 /* libPods-bus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23BC35DA382C2D2D5C62ED1E /* libPods-bus.a */; };
 		BF0E983F25E0B187009AC422 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0E983E25E0B187009AC422 /* Menu.swift */; };
 		BF0E984325E0B698009AC422 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0E984225E0B698009AC422 /* Settings.swift */; };
@@ -25,8 +23,6 @@
 		23BC35DA382C2D2D5C62ED1E /* libPods-bus.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-bus.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3402252125E0C1B500B2A71C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = bus/ContentView.swift; sourceTree = SOURCE_ROOT; };
 		3402255125E0C85800B2A71C /* Input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Input.swift; sourceTree = "<group>"; };
-		3402256325E0E3CF00B2A71C /* GoogleMapsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapsView.swift; sourceTree = "<group>"; };
-		3402256625E0E6A200B2A71C /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		BF0E983E25E0B187009AC422 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Menu.swift; path = bus/Views/Menu.swift; sourceTree = SOURCE_ROOT; };
 		BF0E984225E0B698009AC422 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Settings.swift; path = bus/Views/Settings.swift; sourceTree = SOURCE_ROOT; };
 		BF8C590C25E0A57B0045E7CA /* bus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bus.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -34,7 +30,8 @@
 		BF8C591325E0A57D0045E7CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF8C591625E0A57D0045E7CA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BF8C591825E0A57D0045E7CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BFB6580F25E0D333002EB184 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BFB6580F25E0D333002EB184 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		BFB6581925E0DDCB002EB184 /* bus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = bus.entitlements; sourceTree = "<group>"; };
 		E118A918E444480666A611F1 /* Pods-bus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bus.debug.xcconfig"; path = "Target Support Files/Pods-bus/Pods-bus.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,8 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				BF0E983E25E0B187009AC422 /* Menu.swift */,
-				3402256325E0E3CF00B2A71C /* GoogleMapsView.swift */,
-				3402256625E0E6A200B2A71C /* LocationManager.swift */,
 				3402255125E0C85800B2A71C /* Input.swift */,
 				BF0E984225E0B698009AC422 /* Settings.swift */,
 			);
@@ -92,6 +87,7 @@
 		BF8C590E25E0A57B0045E7CA /* bus */ = {
 			isa = PBXGroup;
 			children = (
+				BFB6581925E0DDCB002EB184 /* bus.entitlements */,
 				BF0E983D25E0B172009AC422 /* Views */,
 				BF8C590F25E0A57B0045E7CA /* busApp.swift */,
 				3402252125E0C1B500B2A71C /* ContentView.swift */,
@@ -233,10 +229,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3402255225E0C85800B2A71C /* Input.swift in Sources */,
-				3402256425E0E3CF00B2A71C /* GoogleMapsView.swift in Sources */,
 				BF0E983F25E0B187009AC422 /* Menu.swift in Sources */,
 				BF0E984325E0B698009AC422 /* Settings.swift in Sources */,
-				3402256725E0E6A200B2A71C /* LocationManager.swift in Sources */,
 				BFB6581025E0D333002EB184 /* Podfile in Sources */,
 				3402252225E0C1B500B2A71C /* ContentView.swift in Sources */,
 				BF8C591025E0A57B0045E7CA /* busApp.swift in Sources */,
@@ -368,9 +362,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = bus/bus.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"bus/Preview Content\"";
-				DEVELOPMENT_TEAM = X98DZJX5YM;
+				DEVELOPMENT_TEAM = HSVU33FWW8;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = bus/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -391,9 +386,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = bus/bus.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"bus/Preview Content\"";
-				DEVELOPMENT_TEAM = X98DZJX5YM;
+				DEVELOPMENT_TEAM = HSVU33FWW8;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = bus/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
