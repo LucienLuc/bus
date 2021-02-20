@@ -15,13 +15,15 @@ struct Input: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text("Name")
-                .font(.headline)
             TextField("Enter destination...", text: $userInput)
                 .padding()
                 .background(lightGreyColor)
                 .cornerRadius(5.0)
                 .padding()
+            Text(userInput)
+                .multilineTextAlignment(.center)
+                .padding()
+                .font(.headline)
         }
     }
 }
