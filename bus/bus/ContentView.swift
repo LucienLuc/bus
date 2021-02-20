@@ -6,11 +6,16 @@
 //
 
 import SwiftUI
+import GoogleMaps
+
 
 struct ContentView: View {
     var body: some View {
-        Menu()
-            
+        VStack {
+            GoogleMapsView()
+                .edgesIgnoringSafeArea(.top)
+                .frame(height: 300)
+        }
     }
 }
 
