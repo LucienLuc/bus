@@ -8,7 +8,6 @@
 import SwiftUI
 import GoogleMaps
 
-
 struct ContentView: View {
     var body: some View {
         VStack {
