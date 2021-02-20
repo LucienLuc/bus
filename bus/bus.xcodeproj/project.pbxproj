@@ -14,6 +14,7 @@
 		BF8C591025E0A57B0045E7CA /* busApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8C590F25E0A57B0045E7CA /* busApp.swift */; };
 		BF8C591425E0A57D0045E7CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF8C591325E0A57D0045E7CA /* Assets.xcassets */; };
 		BF8C591725E0A57D0045E7CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF8C591625E0A57D0045E7CA /* Preview Assets.xcassets */; };
+		BFB6581025E0D333002EB184 /* Podfile in Sources */ = {isa = PBXBuildFile; fileRef = BFB6580F25E0D333002EB184 /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		BF8C591325E0A57D0045E7CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF8C591625E0A57D0045E7CA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BF8C591825E0A57D0045E7CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFB6580F25E0D333002EB184 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 		BF8C590325E0A57B0045E7CA = {
 			isa = PBXGroup;
 			children = (
+				BFB6580F25E0D333002EB184 /* Podfile */,
 				BF8C590E25E0A57B0045E7CA /* bus */,
 				BF8C590D25E0A57B0045E7CA /* Products */,
 			);
@@ -158,6 +161,7 @@
 				3402255225E0C85800B2A71C /* Input.swift in Sources */,
 				BF0E983F25E0B187009AC422 /* Menu.swift in Sources */,
 				BF0E984325E0B698009AC422 /* Settings.swift in Sources */,
+				BFB6581025E0D333002EB184 /* Podfile in Sources */,
 				3402252225E0C1B500B2A71C /* ContentView.swift in Sources */,
 				BF8C591025E0A57B0045E7CA /* busApp.swift in Sources */,
 			);
