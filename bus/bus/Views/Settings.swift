@@ -8,8 +8,37 @@
 import SwiftUI
 
 struct Settings: View {
+    
+    @State private var speed = 50.0
+    @State private var isEditing = false
+
     var body: some View {
-        Slider(value: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant(10)/*@END_MENU_TOKEN@*/)
+        VStack (){
+            Text("Settings")
+                .font(.title)
+                .fontWeight(.medium)
+                .padding(.all)
+            Label("Notification Radius", systemImage: /*@START_MENU_TOKEN@*/"42.circle"/*@END_MENU_TOKEN@*/)
+                .alignmentGuide(HorizontalAlignment.leading) { _ in  -500 }
+            HStack() {
+                Text("0")
+                Slider(
+                    value: $speed,
+                    in: 0...100,
+                    step: 5,
+                    onEditingChanged: { editing in
+                        isEditing = editing
+                    }
+                ) {
+                    Text("Speed")
+                }
+                Text("100")
+            }
+                .padding(.all)
+            Text("\(speed)")
+                    .foregroundColor(isEditing ? .red : .blue)
+        }
+        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)
     }
 }
 
